@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick a Ballerina version
-		"args": { "VARIANT": "1.2.13" }
+		"args": { "VARIANT": "swan-lake-alpha1" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
@@ -15,7 +15,7 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"ballerina.ballerina"
+		"/tmp/ballerina-swan-lake-alpha1.vsix"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
