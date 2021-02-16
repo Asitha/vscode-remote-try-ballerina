@@ -42,6 +42,23 @@ Create a Ballerina module with
 $ bal add <module_name>
 ```
 ----
+
+## Using a specific container with an older Ballerina version
+
+Update the .devcontainer/devcontainer.json file to switch the Ballerina version of the container
+
+```json
+{
+	"name": "Ubuntu",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "VARIANT": "<IMAGE_TAG_GOES_HERE>" }
+	},
+...
+```
+
+You can check the docker hub [ballerina-dev](https://hub.docker.com/repository/docker/asithan/ballerina-dev/tags?page=1&ordering=last_updated) registry for released Ballerina dev containers. 
+
 > NOTE: Base docker image for the dev container is maintained at [VS Code Remote Ballerina-Dev Docker](https://github.com/Asitha/vscode-remote-ballerina-dev-container) repository.
 
 
