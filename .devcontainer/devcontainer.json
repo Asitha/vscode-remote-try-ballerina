@@ -15,20 +15,18 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"/tmp/ballerina.vsix",
-		"bungcip.better-toml"
+		"/tmp/ballerina.vsix"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [8080],
 
-	"initializeCommand": "mkdir -pv ./.ballerina",
 	"mounts": [
 		"type=bind,source=${localWorkspaceFolder}/.ballerina/,target=/home/vscode/.ballerina"
 	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "",
+	// "postCreateCommand": "bal pull ballerinax/twitter; bal pull ballerinax/covid19",
 	
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
