@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick a Ballerina version
-		"args": { "VARIANT": "swan-lake-alpha5" }
+		"args": { "VARIANT": "swan-lake-beta6" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
